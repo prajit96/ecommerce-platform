@@ -6,6 +6,7 @@ const app = express();
 
 // Connect Database
 connectDB();
+
 app.use(cors())
 // Middleware
 app.use(express.json({ extended: false }));
