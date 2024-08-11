@@ -14,6 +14,9 @@ const ProductSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  relatedField: { type: mongoose.Schema.Types.ObjectId, 
+  ref: 'RelatedModel' 
+  },
   quantity: {
     type: Number,
     required: true,
